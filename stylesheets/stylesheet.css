@@ -285,11 +285,12 @@ Full-Width Styles
   border-bottom-right-radius: 2px;
 }
 
+/*Top Navigation*/
 #nav{
     background-color: #222;
 }
 #nav_wrapper{
-    width: 960px;
+    width: auto;
     margin: 0 auto;
     text-align: left;
 }
@@ -318,6 +319,42 @@ Full-Width Styles
     color: #ccc;
     text-decoration: none;
 }
+
+/*Bottom Navigation*/
+#navBottom{
+    background-color: #222;
+}
+#navBottom_wrapper{
+    width: auto;
+    margin: 0 auto;
+    text-align: right;
+}
+#navBottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position:relative;
+}
+#navBottom ul li{
+    display: inline-block;
+    /*pad top right bottom left*/
+    padding: 10px 20px 10px 20px;
+}
+#navBottom ul li:hover{
+    background-color: #333;
+    border-bottom: 1px solid #ffffff;
+}
+#navBottom ul li a:visited{
+    color: #ccc;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#navBottom ul li a:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+
 
 
 #header_wrap {
