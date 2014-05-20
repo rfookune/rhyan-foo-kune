@@ -157,6 +157,14 @@ p img {
   border: none;
 }
 
+img.img_float{
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  height:50%;
+  width:50%;
+}
+
 pre, code {
   width: 100%;
   color: #222;
