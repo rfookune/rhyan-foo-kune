@@ -301,6 +301,7 @@ Full-Width Styles
     width: auto;
     margin: 0 auto;
     text-align: left;
+    border-bottom: 1px solid #ffffff;
 }
 #nav ul {
     list-style: none;
@@ -315,7 +316,9 @@ Full-Width Styles
 }
 #nav ul li:hover{
     background-color: #333;
-    border-bottom: 1px solid #ffffff;
+}
+#navBottom ul li a{
+    text-decoration: none;
 }
 #nav ul li a:visited{
     color: #ccc;
@@ -329,9 +332,6 @@ Full-Width Styles
 }
 
 /*Bottom Navigation*/
-#navBottom{
-    background-color: #222;
-}
 #navBottom_wrapper{
     width: auto;
     margin: 0 auto;
@@ -347,15 +347,16 @@ Full-Width Styles
     display: inline-block;
     /*pad top right bottom left*/
     padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 #navBottom ul li:hover{
     background-color: #333;
     border-bottom: 1px solid #ffffff;
 }
+#navBottom ul li a{
+    text-decoration: none;
+}
 #navBottom ul li a:visited{
-    color: #ccc;
-    display: block;
-    padding: 15px;
     text-decoration: none;
 }
 #navBottom ul li a:hover{
