@@ -338,7 +338,7 @@ Full-Width Styles
 #nav ul li:hover{
     background-color: #333;
 }
-#navBottom ul li a{
+#nav ul li a{
   color: #ccc
   display: block;
   padding: 15px
@@ -361,6 +361,7 @@ Full-Width Styles
     width: auto;
     margin: 0 auto;
     text-align: right;
+    border-bottom: 1px solid #ffffff
 }
 #navBottom ul {
     list-style: none;
@@ -376,7 +377,6 @@ Full-Width Styles
 }
 #navBottom ul li:hover{
     background-color: #333;
-    border-bottom: 1px solid #ffffff;
 }
 #navBottom ul li a{
     text-decoration: none;
