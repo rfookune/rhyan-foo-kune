@@ -186,6 +186,12 @@ img.img_logo{
   width: 40px; 
 }
 
+img.gitlink{
+  height: 25%;
+  width: 25%;
+  
+}
+
 pre, code {
   width: 100%;
   color: #222;
