@@ -9,7 +9,18 @@
     <link rel="shortcut icon" href="/images/web_icon_hd.png">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
     <title>Projects</title>
+    
+    <meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+    <meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <script src="js/modernizr.custom.79639.js"></script>
+
+
   </head>
 
   <body>
@@ -39,22 +50,35 @@
         </header>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-        <a name="safewalk-android-application" class="anchor" href="#safewalk-android-application"><span class="octicon octicon-link"></span></a>SafeWalk Project</h3>
 
-        <h5>What is SAFEwalk?</h5>
+
+    <!-- TESTING TRNASITION -->
+            <div id="container" class="container">  
+
+            <div class="menu-panel">
+                <ul id="menu-toc" class="menu-toc">
+                    <li class="menu-toc-current"><a href="#item1">SafeWalk</a></li>
+                    <li><a href="#item2">Summer Research</a></li>
+                    <li>
+                </ul>
+            </div>
+
+            <div class="bb-custom-wrapper">
+                <div id="bb-bookblock" class="bb-bookblock">
+                    <div class="bb-item" id="item1">
+                        <div class="content">
+                            <div class="scroller">
+                                <h2>SafeWalk Project</h2>
+                                <h3>What is SAFEwalk?</h3>
 
         <p>"Macalester's SAFEwalk is a campus program dedicated to providing the college's students, faculty, and staff a safe campus environment." SAFEwalk is a Macalester College community service which allows all community members to be safely escorted on or off campus.
         <br>For more information see <a href="http://www.macalester.edu/campuscenter/safewalk/">SAFEwalk website</a>.</p>
 
-        <h5>SafeWalk Android Application</h5>
+        <h3>SafeWalk Android Application</h3>
 
         <p>SafeWalk App is an android application which provides access to Macalester SAFEwalk services. Through a simple and intuitive interface, the users are able to place pick-up requests which are directly sent to SAFEwalk.</p>
 
-        <h5>SafeWalk webpage</h5>
+        <h3>SafeWalk webpage</h3>
         <p>This module of the SafeWalk project allows the administration of Macalester SAFEwalk services to remotely manage the request placed through the above android application. This module has been created for private use of the SAFEwalk administration.</p>
 
 
@@ -63,16 +87,57 @@
 
         <p><br></br></p>
 
-        <h3>
-        <a name="summer-research-2013" class="anchor" href="#summer-research-2013"><span class="octicon octicon-link"></span></a>Experimental determination of carrier density and carrier mobility in monolayer CVD Graphene</h3>
 
-        <p>During the summer of 2013, I participated in Macalester College Summer Research program during which I worked closely with a Macalester College faculty in laboratory.</p>
+                                <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bb-item" id="item2">
+                        <div class="content">
+                            <div class="scroller">
+                                <h2>Experimental determination of carrier density and carrier mobility in monolayer CVD Graphene</h2>
 
-        <h5>What is Graphene?</h5>
+                                      <p>During the summer of 2013, I participated in Macalester College Summer Research program during which I worked closely with a Macalester College faculty in laboratory.</p>
+
+        <h3>What is Graphene?</h3>
         <p>Graphene is a monolayer of carbon atoms packed into honeycomb lattice. Graphene is an emerging material that could be used in electronic components due to its multiple physical properties. This material is strong, flexible and has a high conductivity. Research is being conducted to further investigate its use and applications.</p>
 
-        <h5>Research Topic</h5>
+        <h3>Research Topic</h3>
         <p>Time resolved terahertz spectroscopy measurements were carried on multiple graphene samples in a magnetic field to determine its carrier concentration and scattering lifetime.</p>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <nav>
+                    <span id="bb-nav-prev">&larr;</span>
+                    <span id="bb-nav-next">&rarr;</span>
+                </nav>
+
+                <span id="tblcontents" class="menu-button">Table of Contents</span>
+
+            </div>
+                
+        </div><!-- /container -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquerypp.custom.js"></script>
+        <script src="js/jquery.bookblock.js"></script>
+        <script src="js/page.js"></script>
+        <script>
+            $(function() {
+
+                Page.init();
+
+            });
+        </script>
+
+            <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
 
       </section>
     </div>
