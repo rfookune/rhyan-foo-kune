@@ -15,6 +15,25 @@
 
 <body>
 
+<!-- facebook -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1550855185127026',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
     <!--Top Navigation bar-->
     <div id="nav">
         <div id="nav_wrapper">
@@ -28,6 +47,7 @@
             </ul>
         </div>
     </div>
+
 
 
     <!-- HEADER -->
@@ -82,6 +102,13 @@ $ git checkout gh-pages
     </div>
 
     <!-- FOOTER  -->
+
+    <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+    </div>
 
     <div id="footer_wrap" class="outer">
         <footer class="inner">
