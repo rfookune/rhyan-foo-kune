@@ -137,9 +137,28 @@
 
         <p>
         Lorem ipsum dolor sit amet, vix putant deserunt adipiscing eu. Option mentitum elaboraret has cu, erant elaboraret vel cu. Sed in euismod facilisi torquatos, ea delenit corrumpit quaerendum vix. Et ius reque moderatius. Vis ea consul laudem utroque, nobis phaedrum eam et. Justo nostro vim te, elit munere voluptaria duo te. Aliquam patrioque similique nec id, ad omittam repudiare mel.
-
-        In persecuti intellegat sea, ius debet regione disputando no. Eum ad putent mollis, mel eu magna dicit, ubique platonem ne mel. Has ex voluptua democritum repudiandae, persius oportere expetendis et eum, id vim dicta labores legendos. Mei prima tibique suscipiantur ei, dicit democritum qui ea. Omittam definitiones te pro. Id pro aliquam appetere. 
+ 
         </p>
+
+        <!--
+        Below we include the Login Button social plugin. This button uses
+        the JavaScript SDK to present a graphical Login button that triggers
+        the FB.login() function when clicked.
+        -->
+
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+
+        <div id="status">
+        </div>
+
+        <div
+          class="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>  
+
       </section>
   </div>
 
@@ -162,24 +181,7 @@
         </footer>
     </div>
 
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
 
 </body>
 </html>
