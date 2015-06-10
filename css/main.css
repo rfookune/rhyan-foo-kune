@@ -100,3 +100,26 @@ hr:before {
 .divider1 {
 	background-image: url('../imgs/mac3.jpg')
 }
+
+.divider2 {
+	background-image: url('../imgs/project4.jpg')
+}
+
+.divider3 {
+	background-image: url('../imgs/writing1.jpg')
+}
+
+
+
+#socialwrap {
+	background: url(../imgs/profile_pic.jpg) no-repeat center top;
+	margin-top: 50px;
+	padding-top:120px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+    background-size: 100%;
+    background-size: cover;
+}
