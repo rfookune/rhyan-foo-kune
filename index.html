@@ -6,6 +6,7 @@
 	<title>Rhyan Foo Kune</title>
 
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link id="page_favicon" href="imgs/icon.png" rel="icon" type="image/x-icon"/>
 
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -15,29 +16,88 @@
 <body>
 
   	<div id="navbar-main">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-    	<div class="container-fluid">
-        	<div class="navbar-header">
-          		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="glyphicon glyphicon-menu-hamburger" style="font-size:18px; color:#3498db;" aria-hidden="true"></span>
-          		</button>
-          		<a class="navbar-brand hidden-xs hidden-sm" href="#home">
-          		<!-- <span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span> -->
-          		<span class="glyphicon glyphicon-menu-hamburger" style="font-size:18px; color:#3498db;" aria-hidden="true"></span>
-          		</a>
-        	</div>
-        	<div class="navbar-collapse collapse">
-          		<ul class="nav navbar-nav">
-            		<li><a href="#home" class="smoothScroll"> Home</a></li>
-					<li> <a href="#about" class="smoothScroll"> About Me</a></li>
-					<li> <a href="#resume" class="smoothScroll"> Resume</a></li>
-					<li> <a href="#projects" class="smoothScroll"> Projects</a></li>
-					<li> <a href="#social" class="smoothScroll"> Social Media</a></li>
-				</ul>
-        	</div><!--/.nav-collapse -->
-      	</div>
+    	<div class="navbar navbar-inverse navbar-fixed-top">
+    		<div class="container-fluid">
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="glyphicon glyphicon-menu-hamburger" style="font-size:18px; color:#3498db;" aria-hidden="true"></span>
+    	      		</button>
+        		</div>
+        		<div class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav">
+            			<li><a href="#home" class="smoothScroll"> Home</a></li>
+						<li> <a href="#about" class="smoothScroll"> About Me</a></li>
+						<li> <a href="#resume" class="smoothScroll"> Resume</a></li>
+						<li> <a href="#projects" class="smoothScroll"> Projects</a></li>
+						<li> <a href="#social" class="smoothScroll"> Social Media</a></li>
+					</ul>
+        		</div>
+      		</div>
+    	</div>
     </div>
+
+    <!-- ==== HEADERWRAP ==== -->
+	<div id="headerwrap" id="home" name="home">
+		<header class="clearfix">
+  		 	<div class="circular"></div>
+  		</header>	    
     </div>
+
+
+    <!-- === ABOUT ME SECTION === -->
+    <div class="container" id="about" name="about">
+		<div class="row white">
+		<br>
+			<h1 class="centered">Rhyan Foo Kune</h1>
+			<hr>
+			
+			<!-- EDIT PROFILE -->
+			<div class="col-lg-6" id="p_brief">
+				
+				<p><u><strong>Location:</strong></u> Saint Paul, MN, 55105</p>
+				<p><u><strong>Date of Birth:</strong></u> 12/30/92</p>
+		        <p><u><strong>Sex:</strong></u> Male</p>        
+		        <p><u><strong>Nationality:</strong></u> Mauritian</p>
+		        <p><u><strong>Education:</strong></u>
+		        <br><stem>Macalester College,</stem> Saint Paul, MN (09/11-05/15)
+		        <br><stem>Lycée des Mascareignes,</stem> Helvétia, Saint Pierre, Mauritius (09/08-06/11)
+		        <br><stem>Collège Pierre Poivre,</stem> Helvétia, Saint Pierre, Mauritius (09/04-06/08)
+		        <br><stem>Ecole du Centre,</stem> Helvétia, Saint Pierre, Mauritius (09/03-06/04)
+		        <br><stem>Clavis International Primary School,</stem> Mount Ory Rd, Moka, Mauritius (01/98-10/04)</p>
+			</div>
+
+			<!-- DESCRIBE YOU -->
+			<div class="col-lg-6" id="p_description">
+				
+				<p>We believe ideas come from everyone, everywhere. In fact, at BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin Cities and we believe this place has much to offer. So we do what we can to support the community we love.</p>	
+
+			</div>
+		</div>
+	</div>
+
+	<!-- ==== SECTION DIVIDER1 === -->
+	<section class="section-divider textdivider divider1">
+		<div class="container">
+			<h1>MACALESTER COLLEGE</h1>
+			<hr>
+			<p>Insert quote</p>
+		</div>
+	</section>
+
+
+	<div class="container" id="pdf_resume" name="about">
+		<div class="row white">
+			<h1  class="centered">Resume</h1>
+			<hr>
+
+			<iframe  id="resume" class="scribd_iframe_embed" src="https://www.scribd.com/embeds/268145945/content?start_page=1&view_mode=scroll&show_recommendations=true" data-auto-height="false" data-aspect-ratio="undefined" scrolling="no" id="doc_11300" width="100%" height="600" frameborder="0"></iframe>
+			<!-- <a title="View Resume on Scribd" href="https://www.scribd.com/doc/268145945/Resume">Resume</a> -->
+
+	
+			<!-- <iframe id="resume" src="../rhyan-foo-kune/documents/resume.pdf" width="640" height="480"></iframe> -->
+		</div>
+	</div>
+
 
 </body>
 </html>
