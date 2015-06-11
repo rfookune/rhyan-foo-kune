@@ -82,8 +82,7 @@ hr:before {
 	box-shadow: 0 0 15px rgba(0, 0, 0, .8);
 }
 
-
-.container{
+.padding{
 	padding-top: 25px;
 }
 
@@ -146,6 +145,35 @@ hr:before {
 }
 
 
+.blog-bg {
+	background: black;
+	padding-right: 0px;
+	padding-left: 0px;
+	
+}
+
+.blog-bg h4 {
+	color: white;
+}
+
+.blog-bg h5 {
+	color: grey;
+}
+
+.blog-content {
+	padding-top: 10px;
+	background: #f2f2f2;
+}
+
+.blog-content p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*.icon-link {
+	padding-left: 20px;
+	background: url('../imgs/link.png') no-repeat;
+}*/
 
 #socialwrap {
 	background: url(../imgs/profile_pic.jpg) no-repeat center top;
