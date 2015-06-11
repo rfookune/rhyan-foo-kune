@@ -83,13 +83,8 @@ hr:before {
 }
 
 
-#pdf_resume .scribd_iframe_embed{
-	padding-left: 50px; 
-	padding-top: 50px;
-	margin: 0 auto;
-	height: 700px;
-	width: 90%;
-	max-width: 1300px;
+.container{
+	padding-top: 25px;
 }
 
 .white h1 {
@@ -98,6 +93,15 @@ hr:before {
 
 .white p {
 	padding-top: 25px;
+}
+
+#resume .scribd_iframe_embed{
+	padding-left: 50px; 
+	padding-top: 50px;
+	margin: 0 auto;
+	height: 700px;
+	width: 90%;
+	max-width: 1300px;
 }
 
 /* Section Dividers */
