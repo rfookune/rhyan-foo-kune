@@ -82,6 +82,11 @@ hr:before {
 	box-shadow: 0 0 15px rgba(0, 0, 0, .8);
 }
 
+.about p{
+	margin: 0;
+	padding: 0;
+}
+
 .padding{
 	padding-top: 25px;
 }
@@ -170,11 +175,6 @@ hr:before {
 	padding-right: 30px;
 }
 
-/*.icon-link {
-	padding-left: 20px;
-	background: url('../imgs/link.png') no-repeat;
-}*/
-
 #socialwrap {
 	background: url(../imgs/profile_pic.jpg) no-repeat center top;
 	margin-top: 50px;
@@ -186,4 +186,11 @@ hr:before {
 	width: 100%;
     background-size: 100%;
     background-size: cover;
+}
+
+.logo{
+  text-align: center;
+  margin-right: 15px;
+  height: 40px;
+  width: 40px; 
 }
