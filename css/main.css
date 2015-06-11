@@ -26,6 +26,38 @@ hr:before {
     text-align: center;
 }
 
+
+#github_link {
+	display: block;
+	float: left;
+	padding: 15px 60px 15px 15px;
+	color: #fff;
+	background: url('../imgs/blacktocat.png') #0090ff no-repeat 95% 50%;
+	font-weight: 700;
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#downloads {
+	float: right;
+	width: 95px;
+	height: 105px;
+	background: url('../imgs/icon_download.png') no-repeat 0% 80%;
+}
+
+
+.CV {
+    /*display: block;*/
+    float: right;
+    width: 70px;
+    height: 90px;
+    margin-top: -1px;
+    text-indent: -5000px;
+    /*overflow: hidden;*/
+    background: url('../imgs/CV_small.png');
+}
+
 #headerwrap {
 	background: url(../imgs/bg2.jpg) no-repeat center top;
 	margin-top: 50px;
