@@ -149,6 +149,57 @@ hr:before {
 	background-image: url('../imgs/writing1.jpg')
 }
 
+/*PROJECTS*/
+
+.items-wrap .gallery-items{
+	position:relative;margin-bottom: 2em;
+	display: block;
+	overflow: hidden;
+}
+
+.items-wrap .gallery-items:hover img{
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.items-wrap .gallery-items .caption{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8);
+	text-align: center;opacity:0;
+	color: #fff;
+}
+
+.items-wrap .gallery-items .caption h3{
+	margin-top:-27%;
+	margin-bottom: 1em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.items-wrap .gallery-items .caption:hover h3{
+	margin-top: 27%;
+}
+
+.items-wrap .gallery-items:hover .caption{
+	opacity:1;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/*PUBLICATIONS*/
 
 .blog-bg {
 	background: black;
@@ -193,4 +244,18 @@ hr:before {
   margin-right: 15px;
   height: 40px;
   width: 40px; 
+}
+
+
+#endwrap {
+	background-color: black;
+	margin-top: 50px;
+	padding-top:120px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 150px;
+	width: 100%;
+    background-size: 100%;
+    background-size: cover;
 }

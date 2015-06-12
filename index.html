@@ -8,10 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
+	<!-- gallery -->
+	<link rel="stylesheet" type="text/css" href="node_modules/gallery/blueimp-gallery.min.css">
 	<link id="page_favicon" href="imgs/icon.png" rel="icon" type="image/x-icon"/>
-
-	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -119,23 +118,64 @@
 		</div>
 	</section>
 
+<!-- ==== PORTFOLIO ==== -->
 	<div class="container padding" id="projects" name="projects">
-		<br>
+	<br>
 		<div class="row">
 			<br>
 			<h1 class="centered">PROJECTS</h1>
 			<hr>
 			<br>
 			<br>
-		</div>
 			
-		<div class="container">
-			<div class="row">	
-			
-			
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- /container -->
+			<section class="items-wrap">
+			<div class="container">
+				<div class="spacer">
+				<div class="row">
+					<div class="col-sm-4 fadeInUp wowload">
+						<div class="gallery-items">
+						<img class="img-responsive" src="imgs/project/safewalk2.png" alt="item01"/>						
+						
+						<div class="caption"><h3>SAFEWalk</h3> <a href="imgs/project/safewalk2.png" title="SAFEWalk" class="gallery-image btn btn-default" data-gallery>View Details</a></div>
+						</div>
+					</div>
+
+					<div class="col-sm-4 fadeInUp wowload">
+						<div class="gallery-items">
+						<img class="img-responsive" src="imgs/project/bam2.png" alt="item01"/>						
+						
+						<div class="caption"><h3>BAM</h3> <a href="imgs/project/bam2.png" title="BAM" class="gallery-image btn btn-default" data-gallery>View Details</a></div>
+						</div>
+					</div>
+
+					<div class="col-sm-4 fadeInUp wowload">
+						<div class="gallery-items">
+						<img class="img-responsive" src="imgs/project/bamboo2.png" alt="item01"/>						
+						
+						<div class="caption"><h3>Bamboo</h3> <a href="imgs/project/bamboo2.png" title="Bamboo" class="gallery-image btn btn-default" data-gallery>View Details</a></div>
+						</div>
+					</div>
+
+				</div>
+				</div>
+			</div>
+			</section>					
+
+		</div><!-- /row -->
+	</div>
+
+		<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	    <!-- The container for the modal slides -->
+	    <div class="slides"></div>
+	    <!-- Controls for the borderless lightbox -->
+	    <h3 class="title">title</h3>
+	    <a class="prev">‹</a>
+	    <a class="next">›</a>
+	    <a class="close">×</a>
+	    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+	</div>
+
 
 	<!-- ==== SECTION DIVIDER 3 ==== -->
 	<section class="section-divider textdivider divider3">
@@ -204,8 +244,19 @@
 		</div><!-- /row -->
 	</div><!-- container -->
 
+	<!-- ==== ENDWRAP ==== -->
+	<div id="endwrap">
+    	
+    </div>
 
-    <script type="text/javascript" src="js/smoothscroll.js"></script>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- gallery -->
+	<script type="text/javascript" src="node_modules/gallery/jquery.blueimp-gallery.min.js"></script>
+
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
 
 </body>
 </html>
