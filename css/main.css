@@ -6,6 +6,32 @@ textarea {
     color: #222;
 }
 
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
 hr {
     position: relative;
     border: none;
@@ -58,6 +84,10 @@ hr:before {
     text-indent: -5000px;
     /*overflow: hidden;*/
     background: url('../imgs/CV_small.png');
+}
+
+.fadeInto{
+    opacity:0;
 }
 
 #headerwrap {
@@ -159,6 +189,10 @@ hr:before {
 	background-image: url('../imgs/writing1.jpg')
 }
 
+.slideInto{
+    opacity:0;
+}
+
 /*PROJECTS*/
 
 .items-wrap .btn:hover{
@@ -196,6 +230,7 @@ hr:before {
 .items-wrap .gallery-items .caption h3{
 	margin-top:-27%;
 	margin-bottom: 1em;
+	color: white;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -220,6 +255,7 @@ hr:before {
     display: block;
     margin-left: auto;
     margin-right: auto;}
+
 
 
 /*PUBLICATIONS*/
