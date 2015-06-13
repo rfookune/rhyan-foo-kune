@@ -8,8 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style5.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+
+
 
 	<!-- icon -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -47,6 +50,12 @@
     	</div>
     </div>
     
+    <div id="loader-wrapper">
+			<div id="loader"></div>
+
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+	</div>
 
     <!-- ==== HEADERWRAP ==== -->
 	<div id="headerwrap" id="home" name="home">	    
@@ -152,7 +161,7 @@
 			<div class="container">
 				<div class="spacer">
 				<div class="row">
-					<div class="col-sm-4 wow slideInRight" data-wow-duration="1s">
+					<div class="col-sm-4 wow slideInUp" data-wow-duration="2s">
 						<div class="gallery-items">
 						<img class="img-responsive" src="imgs/project/safewalk2.png" alt="item01"/>						
 						
@@ -160,7 +169,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4 wow slideInRight" data-wow-duration="1s" data-wow-delay:"1s">
+					<div class="col-sm-4 wow slideInUp" data-wow-duration="3s">
 						<div class="gallery-items">
 						<img class="img-responsive" src="imgs/project/bam2.png" alt="item01"/>						
 						
@@ -168,7 +177,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4 wow slideInRight" data-wow-duration="1s" data-wow-delay:"2s">
+					<div class="col-sm-4 wow slideInUp" data-wow-duration="4s">
 						<div class="gallery-items">
 						<img class="img-responsive" src="imgs/project/bamboo2.png" alt="item01"/>						
 						
@@ -273,8 +282,7 @@
 			<br>
 			<br>
 		</div>
-	</div>
-				
+	</div>		
 
 	<!-- ==== ENDWRAP ==== -->
 	<div id="endwrap">
@@ -289,6 +297,8 @@
 
     <script type="text/javascript" src="js/script.js"></script>
 
+	<script type="text/javascript" src="node_modules/modernizr-2.6.2.min.js"></script>
+
     <!-- gallery -->
 	<script type="text/javascript" src="node_modules/gallery/jquery.blueimp-gallery.min.js"></script>
 
@@ -297,6 +307,7 @@
 	<!-- wow js -->
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
+    <!-- // <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script> -->
     <script>
         new WOW().init();
     </script>

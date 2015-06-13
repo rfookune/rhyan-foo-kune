@@ -1,3 +1,14 @@
+// Credit https://ihatetomatoes.net/create-custom-preloading-screen/
+
+$(document).ready(function() {
+    
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 1500);
+    
+});
+
+
 $(document).ready(function() {
     
     /* Every time the window is scrolled ... */
