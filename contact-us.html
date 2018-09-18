@@ -41,8 +41,6 @@
     <link rel="stylesheet" href="#" data-style="styles">
     <link rel="stylesheet" href="css/style-customizer.css" />
 
-    <link href="css/color/color-4.css" rel="stylesheet" type="text/css" />
-
     <!-- custom style -->
     <link rel="stylesheet" href="css/custom.css" />
 
@@ -65,7 +63,7 @@
     <header class="header">
         <div class="container-fluid">
             <div class="row">
-                <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-light white-bg">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light white-bg">
                     <div class="col-md-3 purple-bg">
                         <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
                     </div>
@@ -75,7 +73,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                                <li class="nav-item active">
+                                <li class="nav-item">
                                     <a class="nav-link" data-type="page-transition" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
@@ -93,81 +91,119 @@
                                 <li class="nav-item">
                                     <a class="nav-link" data-type="page-transition" href="blog.html">blog</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item active">
                                     <a class="nav-link" data-type="page-transition" href="contact-us.html">contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </nav> -->
+                </nav>
             </div>
         </div>
     </header>
     <!-- Header End -->
 
 
-    <!-- Begin Content -->
-    <div class="main-container">
-        <!-- About us -->
-        <section class="me-home wrapper">
-            <div class="container-fluid h-100">
-                <div class="row row-eq-height h-100">
-                    <div class="col-md-3 purple-bg">
-                        <div class="iq-objects">
-                            <span class="iq-objects-01">
-                                    <img class="img-fluid" src="images/01.png" alt="drive">
-                                </span>
-                        </div>
+<!-- Begin Content -->
+<div class="main-container">
+    <!-- About us -->
+    <section class="iq-contact wrapper">
+        <div class="container-fluid h-100">
+            <div class="row row-eq-height h-100">
+                <div class="col-md-3 purple-bg">
+                    <div class="iq-objects">
+                        <span class="iq-objects-01">
+                            <img class="img-fluid" src="images/01.png" alt="drive">
+                        </span>
                     </div>
-                    <div class="col-md-9 main-content align-self-center">
-                        <div id="boxscroll" class="iq-home">
-                            <div class="home-deta iq-mt-90">
+                </div>
+                <div class="col-md-9 main-content align-self-center">
+                    <div id="boxscroll" class="inner-box">
+                        <div class="iq-plr-40">
+                            <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-title iq-mb-15">
+                                    <small>My Contact</small>
+                                <h1 class="display-4 iq-tw-8 iq-font-purple">Contact Me</h1>
+                            </div>
+                            </div> 
+                            <div class="col-md-4">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.840108181602!2d144.95373631539215!3d-37.8172139797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1497005461921" style="border:0" allowfullscreen></iframe>
+                            </div>  
+                            <div class="col-md-8">
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="boder-img">
-                                            <img src="./images/rfookune.jpg" class="img-fluid" alt="#">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 content-deta">
-                                        <h2 class="iq-tw-8 ">Hello,<br>I am Rhyan Foo Kune</h2>
-                                        <div id="typer"></div>
-                                        <p class="lead iq-tw-4">I am a full-stack web developer with a strong belief in the positive role of technology in social progress. Originally from the Republic island of Mauritius, my work ethic and resilience have brought me over 10,000 miles away from home to study the benefits of software engineering and make a positive impact on the communities I serve.</p>
-                                        <!-- <a class="button iq-mt-30" href="about-us.html">Download my CV</a> -->
+                                    <div class="col-md-12">
+                                        <h3 class="title iq-tw-8 text-uppercase iq-mt-0">Get in Touch</h3>
+                                          <ul class="contact-info">
+                                            <li><i class="ti-location-pin"></i> <p>1234 North Avenue Luke Bend</p> </li>
+                                            <li><i class="ti-marker-alt"></i> <p>profyl@website.com </p></li>
+                                            <li><i class="ti-mobile"></i> <p>(123)-456-7890 </p></li>
+                                            <li><i class="ti-printer"></i> <p>(098)-765-4321 </p></li>
+                                          </ul>
                                     </div>
                                 </div>
+                            <div class="iq-get-in">
+                            <div id="formmessage">Success/Error Message Goes Here</div>
+                            <form class="form-horizontal" id="contactform" method="post" action="../php/contact-form.php">
+                                <div class="contact-form row">
+                                    <div class="section-field col-md-4">
+                                        <input id="name" type="text" placeholder="Name*" name="name">
+                                    </div>
+                                    <div class="section-field col-md-4">
+                                        <input type="email" placeholder="Email*" name="email">
+                                    </div>
+                                    <div class="section-field col-md-4">
+                                        <input type="text" placeholder="Phone*" name="phone">
+                                    </div>
+                                    <div class="section-field textarea col-md-12">
+                                        <textarea class="input-message" placeholder="Comment*" rows="5" name="message"></textarea>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="hidden" name="action" value="sendEmail" />
+                                    <button id="submit" name="submit" type="submit" value="Send" class="button iq-mt-30">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="ajaxloader" style="display:none"><img class="center-block mt-30 mb-30" src="images/ajax-loader.gif" alt="#"></div>
+                        </div>
                             </div>
                         </div>
+                        </div>
+                        
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Us End -->
-    </div>
-    <!-- Main Content End -->
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 purple-bg">
-                    <div class="footer-copyright text-white">Copyright @ <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a class="text-white" href="#">Profyl.</a></div>
-                </div>
-                <div class="col-md-9">
-                    <ul class="follow-us pull-right">
-                        <li>Follow Me :</li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer End -->
+    </section>
+    <!-- About Us End -->
+</div>
+<!-- Main Content End -->
+
+
+<!-- Footer -->
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 purple-bg">
+                <div class="footer-copyright text-white">Copyright @ <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a class="text-white" href="#">Profyl.</a></div>
+            </div>
+            <div class="col-md-9">
+                <ul class="follow-us pull-right">
+                    <li>Follow Me :</li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer End -->
 
  
 
@@ -195,7 +231,7 @@
 
     <!-- jquery Nicescroll -->
     <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-
+    
     <!-- jquery Retina -->
     <script type="text/javascript" src="js/retina.min.js"></script>
 

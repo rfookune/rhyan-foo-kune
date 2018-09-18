@@ -1,7 +1,10 @@
 <!DOCTYPE html><html class=''>
+
 <head>
 
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
 
 <style class="cp-pen-styles">@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700italic);
@@ -15,10 +18,189 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+	font-family: 'Dancing Script', cursive;
 }
-</style></head><body>
 
-<canvas id="world"></canvas>
+canvas {
+	    z-index: 2;
+    position: relative;
+}
+</style>
+
+<style class="cp-pen-styles">/* mixins */
+/* extends */
+.circle, .panda-face, .panda .eyes .eye .ball, .panda .nose, .panda .ear {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/* styles */
+body {
+  background-color: #fff;
+}
+
+.panda {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  margin-top: -162px;
+  left: 50%;
+  margin-left: -162px;
+  z-index: 5;
+/*  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;*/
+}
+
+.panda-face {
+  background-color: white;
+  border: 12px solid black;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  margin-top: -162px;
+  left: 50%;
+  margin-left: -162px;
+  z-index: 2;
+/*  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;*/
+}
+.panda .eyes {
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  height: 57.5px;
+  margin-top: -70px;
+}
+.panda .eyes .eye {
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  background-color: black;
+  overflow: hidden;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.panda .eyes .eye.left {
+  left: 10px;
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.panda .eyes .eye.right {
+  right: 10px;
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+.panda .eyes .eye .ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin-top: 0;
+  left: 50%;
+  margin-left: -27px;
+  top: 0px;
+  background-color: black;
+  border: 12px solid white;
+}
+.panda .eyes .eye.left .ball {
+  left: 55%;
+}
+.panda .eyes .eye.right .ball {
+  left: 45%;
+}
+.panda .nose {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: 31px;
+  background-color: black;
+}
+.panda .mouth {
+	width: 50px;
+	height: 10px;
+	position: absolute;
+	left: 40%;
+	margin-left: -33.33333px;
+	top: 75%;
+	width: 100px;
+	height: 40px;
+	background-color: #fff;
+	border-bottom-left-radius: 110px;
+	border-bottom-right-radius: 110px;
+	border: 10px solid #000;
+	border-bottom: 0;
+
+}
+.panda .ear {
+  background-color: black;
+  position: absolute;
+  top: -30px;
+  width: 130px;
+  height: 130px;
+}
+.panda .ear.left {
+  left: -35px;
+}
+.panda .ear.right {
+  right: -35px;
+}
+
+.title {
+	font-size: 80px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.img-gif {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+</style>
+</head>
+<body>
+	
+	<h1 class="title">Happy Birthday !!</h1>
+
+	<img class="img-gif" src="./imgs/laughing_panda.gif">
+
+	<div class="panda">
+		
+		<div class="panda-face">
+			<span class="eyes">
+		   		<span class="eye left"><span class="ball"></span></span>
+		   		<span class="eye right"><span class="ball"></span></span>
+		 	</span>
+		  
+		 	<span class="nose"></span>
+		  
+		 	<span class="mouth"></span>
+		</div>
+	  
+	 	<span class="ear left"></span>
+	 	<span class="ear right"></span>
+	  
+	</div>
+	
+	<canvas id="world"></canvas>
 
 <script>(function() {
   var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
@@ -140,4 +322,7 @@ html, body {
 
 //# sourceURL=pen.js
 </script>
+</script><script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
 </body></html>
